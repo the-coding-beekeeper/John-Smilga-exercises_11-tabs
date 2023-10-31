@@ -1,0 +1,116 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v36-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/open-sans-v36-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v36-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  background-color: #f1f5f8;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: 'Open Sans';
+}
+header {
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  margin-top: 4rem;
+  margin-bottom: 0;
+  letter-spacing: 4px;
+  font-size: 34px;
+}
+main {
+  width: 90%;
+}
+.landscape {
+  margin-top: 3rem;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.tabs {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  height: 3rem;
+}
+button {
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  background-color: #dae2ec;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 3px;
+  transition: 0.5s ease;
+}
+button:hover {
+  background-color: rgba(85, 128, 247, 0.2);
+  color: rgb(85, 128, 247);
+}
+.active {
+  background-color: white;
+  pointer-events: none;
+}
+.visible {
+  display: block;
+  text-align: start;
+  padding: 0 2rem;
+  margin-top: 0;
+  margin-bottom: 5rem;
+  height: 17rem;
+  background-color: white;
+  padding-top: 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+.visible h2 {
+  margin: 0;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.visible p {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
+.hidden {
+  display: none;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
